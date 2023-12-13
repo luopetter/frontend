@@ -1,0 +1,58 @@
+.el-dialog{
+  border-radius: 5% !important;
+  overflow: hidden !important;
+}
+.custom-dialog .el-dialog__header {
+  display: none !important;
+}
+
+.custom-dialog .el-dialog__body {
+  margin: 0;
+  padding: 0;
+}
+
+.el-checkbox:hover{
+  color: rgb(65,159,255);
+}
+
+.el-checkbox:hover .el-checkbox__input .el-checkbox__inner{
+  border-color: rgb(65,159,255);
+}
+
+.el-button--primary {
+  border: none !important;
+}
+
+.el-dropdown {
+  border: none !important;
+  --el-dropdown-menuItem-hover-color: transparent !important;
+}
+.el-dropdown-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el-dropdown-link:focus {
+  outline: 0 !important;
+}
+
+.el-dropdown-link {
+  outline: 0 !important;
+}
+
+.el-dropdown:hover{
+  border: none;
+}
+.el-dropdown:active{
+  border: none;
+}
+
+.el-dropdown-menu__item{
+  padding: 6px !important;
+}
+
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  background: rgb(245,245,245) !important;
+}
+

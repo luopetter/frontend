@@ -1,0 +1,173 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  box-sizing:border-box;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.column{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing:border-box;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.base-btn{
+  background-image: linear-gradient(135deg, rgb(89, 195, 251) 10%, rgb(38, 141, 247) 100%) !important;
+  border-color: rgb(89, 195, 251) !important;
+  padding: 0px 20px !important;
+}
+/* 确认按钮 */
+.def-btn{
+  background-image: linear-gradient(135deg, rgb(89, 195, 251) 10%, rgb(38, 141, 247) 100%) !important;
+  border-color: rgb(89, 195, 251) !important;
+  padding: 0px 20px !important;
+}
+/* 取消按钮 */
+.can-btn{
+  background-image: linear-gradient(135deg, rgb(245, 159, 84) 10%, rgb(255, 105, 34) 100%);
+  border-color: rgb(245, 159, 84) !important;
+  padding: 0px 20px !important;
+}
+
+.login-btn {
+  background-image: linear-gradient(135deg, rgb(89, 195, 251) 10%, rgb(38, 141, 247) 100%) !important;
+  border-color: rgb(89, 195, 251) !important;
+  padding: 0px 20px !important;
+}
+
+.reg-btn {
+  background-image: linear-gradient(135deg, rgb(245, 159, 84) 10%, rgb(255, 105, 34) 100%);
+  border-color: rgb(245, 159, 84) !important;
+  padding: 0px 20px !important;
+}
+
+.tencent-btn {
+  background-color: rgb(18, 150, 219) !important;
+  border-color: transparent !important;
+  font-size: 14px;
+  padding: 0px 20px;
+}
+
+.weChat-btn {
+  background-color: rgb(36, 183, 106) !important;
+  border-color: transparent !important;
+  font-size: 14px;
+  padding: 0px 20px !important;
+}
+
+.upload-btn{
+  background-color: #F5F5F5 !important;
+  height: 40px !important;
+  border: none !important;
+  color: rgb(71,71,71) !important;
+  font-weight: 1000 !important;
+  font-size: 14px;
+  padding: 0px 20px !important;
+}
+
+.upload-btn:hover{
+  border: none !important;
+}
+.upload-btn:active{
+  border: none !important;
+}
+
+.premium-btn-active{
+  color: white !important;
+  font-weight: bold !important;
+  height: fit-content !important;
+  background-color: rgb(253, 158, 22) !important;
+  border-color: transparent !important;
+  font-size: 12px;
+  padding: 0px 5px !important;
+  border-radius: 12px !important;
+}
+
+.premium-btn-unActive{
+  color: white !important;
+  font-weight: bold !important;
+  height: fit-content !important;
+  background-color: rgb(133,133,133) !important;
+  border-color: transparent !important;
+  font-size: 12px;
+  padding: 0px 5px !important;
+  border-radius: 12px !important;
+}
+
+.btn-icon {
+  margin-right: 3.5px;
+}
+
+.img-wrap {
+  line-height: 0;
+}
+
+.text-btn{
+  cursor: pointer;
+}
+
+.text-btn:hover{
+  color: rgb(65,159,255);
+}
+
+.next {
+  cursor: default;
+  margin: 0px 7px 0px 7px;
+  color: rgb(153, 153, 153);
+}
+
+/* 独占一行 */
+.fill-line {
+  margin-bottom:7px;
+}
+
+/* 分割线相关 */
+.line {
+  position: absolute;
+  align-items: center;
+  display: block;
+  width: 150px;
+  height: 3px;
+  background-color: rgb(78, 83, 88);
+}
+
+.line:before,
+.line:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 40px;
+  height: 100%;
+  background: rgb(78, 83, 88);
+  z-index: -1;
+}
+
+.line:before {
+  z-index: 1;
+  background: rgb(64, 158, 255);
+  transition: 1s;
+}
+
+.line:hover {
+  background: transparent;
+}
+
+.line-active:hover+.line:before,
+.line-active+.line:after {
+  width: 100%;
+}

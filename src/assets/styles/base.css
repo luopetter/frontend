@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245,245,245);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.bold{
+  font-weight: bold;
+}
+.pointer{
+  cursor: pointer;
+}
+a {
+  display: block;
+  color: rgb(92, 93, 94);
+  text-decoration: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a:hover {
+  color: rgb(65, 159, 255);
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+
+
+.avatar-btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.avatar-btn::after {
+  border: none;
+}
+
+input:-webkit-autofill {
+
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+
+  -webkit-text-fill-color: #333;
+
+}
+
+.header-navbar {
+  position: fixed;
+  flex: 1;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 64px;
+  width: 100%;
+  padding: 0px 24px;
+  border-bottom: 0.5px solid #DCDFE6;
+  background-color: white;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.container-center {
+  padding-top: 64px;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-right {
+  width: 400px;
+  padding-left: 20px;
+}
+
+/* 整个滚动条 */
+::-webkit-scrollbar {
+    /* 对应纵向滚动条的宽度 */
+    width: 10px;
+    /* 对应横向滚动条的宽度 */
+    height: 10px;
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(222,223,225);
+    border-radius:162px;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+    border-radius: 32px;
+}
+
+/* 大屏幕 */
+@media (min-width:1680px) {
+
+  .content-wrap {
+    width: 1680px;
+  }
+
+  .main-left {
+    width: 900px;
+  }
+
+  .main-right {
+    display: block;
+  }
+
+  .page-cover-wrap {
+    max-height: 100%;
+  }
+}
+
+/* 中等屏幕 */
+@media (min-width:1440px) and (max-width:1679px) {
+  .content-wrap {
+    width: 1440px;
+  }
+
+  .main-left {
+    width: 900px;
+  }
+
+  .main-right {
+    display: block;
+  }
+
+  .page-cover-wrap {
+    max-height: 100%;
+  }
+}
+
+/* 小屏幕 */
+@media (min-width:996px) and (max-width:1439px) {
+  .content-wrap {
+    width: 996px;
+  }
+
+  .main-left {
+    width: 600px;
+  }
+
+  .main-right {
+    display: block;
+  }
+
+  /* .page-cover-wrap{
+    max-height: 291px;
+  }
+  .page-cover-image{
+    height: 291px;
+  } */
+  .page-cover-wrap {
+    max-height: 100%;
+  }
+}
+
+/* 手机端显示 */
+@media (max-width:995px) {
+
+  .content-wrap {
+    width: 90%;
+  }
+
+  .main-left {
+    width: 80%;
+  }
+
+  .main-right {
+    display: none;
+  }
+
+  .page-cover-wrap {
+    max-height: 100%;
+  }
+
+  * {
+    font-size: 12px;
+  }
+
+  /* .page-cover-image{
+    height: 150px;
+  } */
+}
